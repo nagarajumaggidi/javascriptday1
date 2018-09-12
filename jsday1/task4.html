@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>
+    task4
+    
+    
+    </title></head>
+<body>
+    <form>
+       Yes 
+ <input type="radio" onclick="myfun()"    name="form" id="radio1" > 
+        No
+    <input type="radio" name="form" id="radio2">
+    </form>
+    <div  id="form" style="visibility: hidden">
+        <form>
+    if yes,explain:
+        <input type="text" ><br>
+    what can we do:
+        <input type="text" >
+    
+    </form>
+    </div>
+    other:
+        <input type="text">
+    
+    </body>
+    <script>
+    function myfun(){
+        
+       if (document.getElementById('radio1').checked) {
+        document.getElementById('form').style.visibility = 'visible';
+    }
+    else 
+        document.getElementById('form').style.visibility = 'hidden';
+
+}  
+        
+        
+        
+
+    
+    
+        
+        
+        
+    
+    </script>
+
+</html>

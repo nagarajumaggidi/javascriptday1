@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <form>
+    enter area:
+    <input type="text" id="num1"><br><br>
+        
+        <input type="button" onclick="calculate()" value="caluclate"><br><br>
+        <input type="number" id="answer"><br>
+        
+    </form>
+    </body>
+    
+    <script>
+    
+    function calculate() {
+        var a = document.getElementById("num1").value;
+        document.getElementById("answer").value = a*a;
+    }
+    
+    
+    </script>
+    
+    
+    
+</html>

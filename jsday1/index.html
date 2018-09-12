@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>mobile number task</title>    
+</head>
+<body>
+    <form onsubmit="return myfun()">
+        mobile no1:
+    <input type="number" id="mobileno1" value=""><br>
+        
+    <input type="submit" ><br>
+        <p id="message"> </p>
+    
+    </form> 
+</body>
+    
+    
+<script>
+    function myfun(){
+        
+        var a=document.getElementById("mobileno1").value;
+       
+        
+        if(a.length=="")
+        {
+            document.getElementById("message").innerHTML="enter the mobile no";
+            return false;
+            }
+        
+        if(a.length>10){
+            document.getElementById("message").innerHTML= "enter the valid Mobile number";
+            return false;
+             }
+         
+        if(a.length<5){
+            document.getElementById("message").innerHTML= "enter the valid Mobile no ";
+            return false;
+             }
+    }
+    </script>
+</html>
